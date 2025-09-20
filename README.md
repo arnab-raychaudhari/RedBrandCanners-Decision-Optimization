@@ -70,3 +70,25 @@ tomato crop.
 
 <b>Exhibit 4. Myers’ Marginal Profit Analysis of Tomato Products</b>
 
+<img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/97b98a8d084ce71e1428ddcb293af262bdbcf67a/Auxiliary/Exhibit%204.%20Myers%E2%80%99%20Marginal%20Profit%20Analysis%20of%20Tomato%20Products.png" width="800" />
+
+## Understanding the Business Problem
+1. Both Mr. Cooper and Mr. Myers made assessments of tomato product profitability and have
+drawn conclusions based on this to decide which products to produce. Mr. Cooper concluded that
+the incremental profit on whole tomatoes was greater than for any other tomato product, and
+therefore advised to produce whole tomatoes only. Is this reasoning correct?
+
+2. At some point, Mr. Tucker mentioned that it was impossible to produce all whole tomatoes
+because too small a portion of the crop was “A” quality, and claimed that the whole tomato
+production was limited to 800,000 pounds. How did he figure that out?
+
+3. What is the reasoning behind Mr. Myers’ analysis of tomato costs? Is his analysis correct?
+   
+4. Mr. Myers recommended using 2,000,000 pounds of the “B” tomatoes for paste, and the
+remaining 400,000 pounds of “B” tomatoes and all of the “A” tomatoes for juice, resulting in a
+profit of $145,600. Is this figure correct? Is it safe to agree with his recommendation?
+
+5. Mr. Gordon mentioned that he had received an offer for 80,000 pounds of Grade “A” tomatoes at
+25½ cents per pound. Should he have accepted this offer?
+
+
