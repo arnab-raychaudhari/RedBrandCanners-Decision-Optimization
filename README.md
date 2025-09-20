@@ -31,3 +31,42 @@ analysis the incremental profit on whole tomatoes was greater than for any other
 May, after Red Brand had signed contracts agreeing to purchase the grower's production at an average
 delivered price of 18 cents per pound, Mr. Cooper had computed the tomato products' contributions
 (Exhibit 2).
+
+<b>Exhibit 1. Demand Forecasts</b>
+
+<img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/eafc07af093c90a8ecdbaae7fdf5732859b0679c/Auxiliary/Exhibit%201.%20Demand%20Forecasts.png" width="800" />
+
+<b>Exhibit 2. Product Item Profitability (per case)</b>
+
+<img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/eafc07af093c90a8ecdbaae7fdf5732859b0679c/Auxiliary/Exhibit%202.%20Product%20Item%20Profitability%20(per%20case).png" width="800" />
+
+Mr. Tucker called Mr. Cooper's attention to the fact that, although production capacity was ample, it
+was impossible to produce all whole tomatoes because too small a portion of the crop was “A”
+quality. Red Brand used a numerical scale to record the quality of both raw produce and prepared
+products. This scale ran from zero to ten, the higher number representing better quality. “A” tomatoes
+averaged nine points per pound and “B” tomatoes five points per pound. Mr. Tucker noted that the
+minimum average input quality for canned whole tomatoes was eight and for juice six points per
+pound. <i>(This meant, for example, that for every pound of “B” tomatoes used in a batch of tomato juice, one-third
+pound of “A” tomatoes would have to be used to maintain an average quality level of six points per pound for
+the batch.)</i> Paste could be made entirely from “B” grade tomatoes. This meant that whole tomato
+production was limited to 800,000 pounds.
+
+Mr. Gordon stated that this was not a real limitation. Recently solicited to purchase 80,000 pounds of
+Grade “A” tomatoes at 25½ cents per pound, he had turned down the offer. He thought, however, that
+the tomatoes were still available.
+
+Mr. Myers, who had been doing some calculations, said that although he agreed that the Company
+"should do quite well this year", it would not be by canning whole tomatoes. It seemed to him that
+tomato costs should be allocated on the basis of quality and quantity rather than by quantity only, as
+Mr. Cooper had done. Therefore, he had recomputed the marginal profit on this basis and from his
+results (see Exhibit 3), believed that Red Brand should use 2,000,000 pounds of the “B” tomatoes for
+paste, and the remaining 400,000 pounds of “B” tomatoes and all of the “A” tomatoes for juice. If
+demand expectations were realised, a profit contribution of $145,600 would be made in this year's
+tomato crop.
+
+<b>Exhibit 3. Myers’ Analysis of Tomato Costs</b>
+
+<img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/eafc07af093c90a8ecdbaae7fdf5732859b0679c/Auxiliary/Exhibit%203.%20Myers%E2%80%99%20Analysis%20of%20Tomato%20Costs.png" width="800" />
+
+<b>Exhibit 4. Myers’ Marginal Profit Analysis of Tomato Products</b>
+
