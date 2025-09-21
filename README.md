@@ -74,10 +74,16 @@ tomato crop.
 
 ## The interesting conundrum and how Linear Programming can rescue Red Brand Canners
 
-Locate the sections respective to the following bullets in interative python notebook (.ipynb), where I have illustrated the solution for RBC's business problem.
+Locate the sections respective to the following bullets in <a href="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/59c29e1a9a467afdba6685807478c94a4c74456d/RBC-Linear-Programming-Notebook.ipynb" target="_blank">Interative Python Notebook</a> (.ipynb), where I have illustrated the solution for RBC's business problem.
 
-1. Built a model for the problem RBC is faced with, disregarding the availability of the
+1. <b>Model</b>:
+
+Built a model for the problem RBC is faced with, disregarding the availability of the
 additional A tomatoes. Made recommendation about the products to produce along with the required quantities.
+
+<h3>Solution:</h3>
+
+
 
 2. <b>Additional supply of A tomatoes</b> :
 
@@ -85,9 +91,13 @@ Modified the model to incorporate the option of buying the additional 80,000 pou
 25.5 cents/pound as suggested by Mitchell Gordon. Answered the following questions.
 
 • Should Gordon buy the additional A tomatoes?
+
 • If yes, how should he allocate the additional A tomatoes to the different products?
+
 • Is there only one optimal allocation?
+
 • Suppose the additional A tomatoes cost more than 25.5 cents/pound. Up to what price should Gordon be willing to pay?
+
 
 3. <b>Advertising</b>
 
@@ -145,4 +155,3 @@ the year could be sunny, normal or poor? Perform a scenario analysis. Do the sam
 • Given the probabilities of sunny, poor and normal years, what is the average total profit of ordering <b>(S)</b>, <b>(P)</b> and <b>(N)</b> tomatoes?
 
 • What is the recommended amount (pounds) of tomatoes for RBC to buy?
-
