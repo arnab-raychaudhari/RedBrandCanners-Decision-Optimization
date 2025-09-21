@@ -104,6 +104,8 @@ Modified the model to incorporate the option of buying the additional 80,000 pou
 
 • Suppose the additional A tomatoes cost more than 25.5 cents/pound. Up to what price should Gordon be willing to pay?
 
+<h4>Solution:</h4>
+
 <img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/5757899ef83f26c7e33fa917e0842ead72ba2d21/Auxiliary/Part%202%20Solution%20-%20Image%201.png" width="800" />
 
 <img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/5757899ef83f26c7e33fa917e0842ead72ba2d21/Auxiliary/Part%202%20Solution%20-%20Image%202.png" width="800" />
@@ -121,7 +123,13 @@ Suppose that the marketing department of Red Brand Canners feels that it could i
 • How much should RBC be willing to pay for such a campaign?
 • At which product(s) should the advertising be directed?
 • Demonstrated how the Sensitivity Analysis report can be used for making this decision.
-   
+
+<h4>Solution:</h4>
+
+Through marketing campaigns, there is a potential to increase the demand for certain product categories, which can lead to increased profitability. If RBC considers creating a surplus demand of 5000 cases, they should focus on Tomato Paste. The Sensitivity Analysis report shows that the Demand constraint for Tomato Paste has a Slack of 0, indicating that it is a binding constraint. Therefore, any additional demand up to <b>2173.33 pounds</b> could still result in surplus profit. However, for the other two product categories, increasing demand may not result in additional profit, as they have a non-zero slack (<b>13580</b> for whole tomato demand and <b>740</b> for tomato juice).
+
+We revised the demand constraint for Tomato Paste from <b>2000</b> to <b>2125</b> (calculated as <b>25 lb/case * (80,000 + 5000)</b>), scaling the number by dividing it by <b>1000</b> as done in previous LP models, and executed a new LP model. As expected, we observed a profit increase of <b>$6041 (=$683,388 – $677,347)</b>. This change in profit can be validated by multiplying the shadow price of <b>48.33 by 125 (2125 – 2000)</b>.
+
 4. <b>Additional supply for B tomatoes</b>
 
 Mitchell Gordon receives a call from Ed Dawkins, the Vice President of Operations at Tomaco, a
@@ -134,6 +142,10 @@ incoming crop normally contains a mix of grade A and grade B tomatoes.
 • Explained Michell Gordon's reasoning
 • Is it worth buying additional B tomatoes at 18 cents per pound?
 
+<h4>Solution:</h4>
+
+RBC has already procured <b>2,400,000 pounds</b> of grade B tomatoes at <b>18 cents per pound</b>. Any additional purchase of grade B tomatoes would only be a sensible decision if it helps in increasing profit. Upon reviewing the Sensitivity Analysis report, we noticed that the Slack against the Supply coefficient of <b>2400</b> is <b>0</b>, proving that we have a binding constraint. Any further increase in supply up to the upper range of <b>3018.33 pounds</b> may result in an increase in profitability. A unit increase in grade B tomato supply can provide us with an additional <b>$173.67</b> worth of profit. To validate this hypothesis, we changed the supply constraint B coefficient from <b>2400 to 2401</b> and executed a new model. As expected, the optimal objective changed from <b>$683,388 to $683,562</b>, representing an increase of approximately <b>$173</b>.
+
 5. <b>Closing down production lines</b>
 
 Starting up the production line for each of the products entails a substantial set-up cost. Dan Tucker
@@ -143,6 +155,14 @@ product.
 
 • If RBC decides not to start up the Paste line, will this increase or decrease our total profit?
 • Which production lines are ideal for RBC to start up?
+
+<h4>Solution:</h4>
+
+Starting up the production line for each product incurs a significant set-up cost, which plays a pivotal role in production planning and budgeting by directly influencing the feasibility and profitability of manufacturing. When considering the termination of a product category, it is essential to incorporate the cost savings into the objective function. This approach allows for a thorough evaluation of profitability and aids in making informed decisions regarding which product line to close, aiming to maximize profits for RBC management.
+
+To assess the impact of terminating specific product lines, we incorporated the estimated savings of $50,000 into our objective function, scaling it appropriately (i.e., <b>50</b>), and implemented a Linear Program using Gurobipy. Our analysis included three scenarios: a) terminating the production of whole tomatoes, b) terminating the production of tomato juice, and c) terminating the production of tomato paste. Upon evaluating these scenarios, we observed a decrease in the objective function to <b>$642,050, $641,383, and $313,161</b>, respectively. It is noteworthy that the decision not to start up the Tomato Paste line significantly diminishes the profit, almost cutting it by more than <b>50%</b>.
+
+Based on these results, RBC would be most profitable by ceasing the production of whole tomatoes, as this decision would still yield a profit of <b>$642,050</b>, the highest among the three scenarios. Hence, they should be most profitable if they start up the production line of Tomato Juice and Tomato Paste. This analysis demonstrates the importance of strategic decision-making in production planning to maximize profitability and operational efficiency.
 
 6. <b>RBC's tomato purchase strategy 1 year later</b>
 
@@ -170,3 +190,27 @@ the year could be sunny, normal or poor? Perform a scenario analysis. Do the sam
 • Given the probabilities of sunny, poor and normal years, what is the average total profit of ordering <b>(S)</b>, <b>(P)</b> and <b>(N)</b> tomatoes?
 
 • What is the recommended amount (pounds) of tomatoes for RBC to buy?
+
+<h4>Solution:</h4>
+
+Over the next year, a decision on the optimal quantity of tomatoes to purchase under different weather conditions needs to be made. The weather forecast suggests there is a <b>25%</b> chance of a sunny year, a <b>50%</b> probability of a normal year, and a <b>25%</b> likelihood of a poor year. Based on these probabilities and the respective profits associated with each scenario, a calculated strategy is imperative for RBC’s success.
+
+We have revised the profit objective formula as it does include the purchasing price:
+
+$$
+47 * (a_{w} + b_{w}) - 2 * (a_{j} + b_{j}) + 22 * (a_{p} + b_{p})
+$$ 
+
+For a sunny year, RBC should consider purchasing <b>12,000,000 pounds</b> of tomatoes, which is anticipated to yield a profit of <b>$514,000,000</b>. If the year turns out to be normal, the advised purchase is <b>10,667,000 pounds</b>, with an expected profit of <b>$451,333,000</b>. In the event of a poor year, a more conservative purchase of <b>5,467,000 pounds</b> is recommended, which would result in a profit of <b>$206,933,000</b>.
+ 
+The distribution of tomatoes into different product lines is critical for maximizing profits. For instance, in a sunny year, RBC would allocate <b>7,800,000 pounds</b> for whole tomatoes and <b>2,200,000 pounds</b> for grade B tomatoes in the same category, with no tomatoes used for juice. Tomato paste production would utilize <b>2,000,000 pounds</b> of grade B tomatoes, which aligns with RBC’s quality and demand constraints.
+
+To derive the average profit considering the probabilities, we consider the profit contributions from each scenario and weigh them accordingly. This results in an expected average profit, of <b>$382,407,750</b> based on each probability.
+ 
+Assuming RBC prepares for a sunny year, they would purchase <b>12,000,000 pounds</b> of tomatoes. If the year turns out to be sunny indeed, the profit contribution would be <b>$467,000,000</b>. However, if the year is unexpectedly normal, the profit decreases to <b>$420,000,000</b> and for a poor year, it further reduces to <b>$194,400,000</b>.
+ 
+On the other hand, planning for a normal year by purchasing <b>10,667,000 pounds</b> of tomatoes would result in profits of <b>$404,349,000</b> if sunny, <b>$378,233,000</b> if normal, and <b>$177,693,000</b> if poor. This approach offers a moderate profit in sunny conditions but provides more stability and less risk in the event of a poor year.
+ 
+Lastly, if RBC anticipates a poor year and orders 5,467,000 pounds, the profit contributions are the lowest across, with <b>$159,949,000</b> for both sunny and normal years and <b>$112,520,000</b> for a poor year. 
+ 
+Now by taking in mind the probability of each condition and including that into the quality of supplied tomatoes, we get a result of profit contribution of <b>$410,600,000</b> taking into account the probabilities of each weather condition and the quality of supplied tomatoes. This figure seems to be an adjusted profit considering these factors. Bringing the optimal order of <b>9,800,000</b> tomatoes.
