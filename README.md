@@ -81,7 +81,7 @@ Locate the sections respective to the following bullets in <a href="https://gith
 Built a model for the problem RBC is faced with, disregarding the availability of the
 additional A tomatoes. Made recommendation about the products to produce along with the required quantities.
 
-<h5>Solution:</h5>
+<h4>Solution:</h4>
 
 <img src="https://github.com/arnab-raychaudhari/RedBrandCanners-Decision-Optimization/blob/5757899ef83f26c7e33fa917e0842ead72ba2d21/Auxiliary/Part%201%20Solution%20-%20Image%201.png" width="800" />
 
