@@ -1,5 +1,5 @@
 # RedBrandCanners-Decision-Optimization
-Decision-Making under Constraints: An Optimization Approach for Red Brand Canners’ Production and Procurement
+Optimization under Quality and Demand Constraints: A Linear Programming Framework for Red Brand Canners’ Production Planning
 
 # Red Brand Canners : Their business
 Red Brand Canners is a medium-size company specialising in canning and distributing a variety of
